@@ -249,6 +249,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-size: 20px;
   margin-bottom: 16px;
   display: inline-block;
+  cursor: pointer;
 }
 .banner h1 {
   font-size: 65px;
@@ -265,7 +266,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   line-height: 1.5em;
   width: 96%;
 }
-.banner button {
+.banner button{
   color: #fff;
   font-weight: 700;
   font-size: 20px;
@@ -274,6 +275,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: flex;
   align-items: center;
 }
+
+.banner button a{
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 60px;
+  letter-spacing: 0.8px;
+  display: flex;
+  align-items: center;
+}
+
 .banner button svg {
   font-size: 25px;
   margin-left: 10px;
@@ -420,9 +432,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   overflow: hidden;
   margin-bottom: 24px;
 }
+.proj-imgbx img{
+  height : 250px;
+}
 .proj-imgbx::before {
   content: "";
-  background: linear-gradient(90.21deg, #a8aaa9 -5.91%, #117494 111.58%);
+  background-image: url("./assets/img/dark-bg.jpg");
   opacity: 0.85;
   position: absolute;
   width: 100%;

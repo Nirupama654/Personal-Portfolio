@@ -8,6 +8,7 @@ import { HashLink } from 'react-router-hash-link';
 import {
   BrowserRouter as Router
 } from "react-router-dom";
+import resume from "../assets/RESUME.pdf"
 
 export const NavBar = () => {
 
@@ -51,9 +52,12 @@ export const NavBar = () => {
                 <a href="https://github.com/Nirupama654" target="_blank"><img src={navIcon2} alt="" /></a>
                 <a href="https://www.hackerrank.com/profile/prasadnirupama8" target="_blank"><img src={navIcon3} alt="" /></a>
               </div>
-              <HashLink to='#connect'>
-                <button className="vvd"><span>Let’s Connect</span></button>
-              </HashLink>
+              <a href={resume} download>
+                <button className="vvd">
+                  <span>
+                    View Resume
+                </span></button>
+              </a>
             </span>
           </Navbar.Collapse>
         </Container>
