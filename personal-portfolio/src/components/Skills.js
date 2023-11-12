@@ -1,11 +1,19 @@
-import meter1 from "../assets/img/meter1.svg";
-import meter2 from "../assets/img/meter2.svg";
-import meter3 from "../assets/img/meter3.svg";
+import C from "../assets/img/C.png";
+import JavaScript from "../assets/img/Javascript.svg";
+import ReactJS from "../assets/img/logo512.png";
+import NodeJS from "../assets/img/NodeJS.png";
+import HTML from "../assets/img/HTML.svg";
+import CSS from "../assets/img/CSS.svg"
+import Bootstrap from "../assets/img/Bootstrap.png";
+import GIT from "../assets/img/GIT.svg";
+import Postman from "../assets/img/Postman.png";
+import TypeScript from "../assets/img/Typescript.svg"
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import arrow1 from "../assets/img/arrow1.svg";
 import arrow2 from "../assets/img/arrow2.svg";
 import colorSharp from "../assets/img/dark-bg.jpg"
+import { Type } from "react-bootstrap-icons";
 
 export const Skills = () => {
   const responsive = {
@@ -28,6 +36,52 @@ export const Skills = () => {
     }
   };
 
+
+  const skills = [
+    {
+      language : "HTML",
+      logo : HTML
+    },
+    {
+      language : "CSS",
+      logo : CSS
+    },
+    {
+      language : "JavaSript",
+      logo : JavaScript
+    },
+    {
+      language : "ReactJS",
+      logo : ReactJS
+    },
+    {
+      language : "C",
+      logo : C
+    },
+    {
+      language : "Bootstrap",
+      logo : Bootstrap
+    },
+    {
+      language : "TypeScript",
+      logo : TypeScript
+    },
+    {
+      language : "Git",
+      logo : GIT
+    },
+    {
+      language : "Postman",
+      logo : Postman
+    },
+    {
+      language : "NodeJS",
+      logo : NodeJS
+    },
+    
+    
+  ]
+
   return (
     <section className="skill" id="skills">
         <div className="container">
@@ -37,22 +91,14 @@ export const Skills = () => {
                         <h2>Skills</h2>
                         <p>Experienced in full-stack web development with expertise in HTML, CSS, JavaScript, ReactJS, and a strong foundation in UI/UX design principles.</p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
+                          {skills.map((skill) => (
                             <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>JavaScript</h5>
+                                <img src={skill.logo} alt="Image" />
+                                <h5>{skill.language}</h5>
                             </div>
-                            <div className="item">
-                                <img src={meter2} alt="Image" />
-                                <h5>ReactJS</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter3} alt="Image" />
-                                <h5>Bootstrap</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter3} alt="Image" />
-                                <h5>Frontend Development</h5>
-                            </div>
+                          ))}
+                            
+                            
                         </Carousel>
                     </div>
                 </div>

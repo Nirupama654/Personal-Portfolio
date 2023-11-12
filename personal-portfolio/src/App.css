@@ -343,7 +343,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .skill-slider .item img {
   width: 50%;
-  margin: 0 auto 15px auto;
+  max-height: 150px;
+  margin: 0 auto 8px auto;
 }
 .background-image-left {
   top: 28%;
@@ -522,7 +523,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   height : 100px;
 }
 .contact form .error {
-  color : rgb(147, 20, 20);
+  color : rgb(202, 25, 25);
+  text-shadow: 1px 1px 3px black;
 }
 .contact form input::placeholder, .contact form textarea::placeholder {
   font-size: 16px;
